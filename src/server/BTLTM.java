@@ -132,6 +132,7 @@ public class BTLTM {
                 newRoom.addPlayer(this);
                 // gửi lại cho client biết đã tạo phòng và số phòng
                 out.writeUTF("ROOM_CREATED;" + roomName);
+                out.flush();
                 System.out.println("🏠 " + user + " đã tạo phòng: " + roomName);
             }
         }
